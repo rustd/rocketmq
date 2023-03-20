@@ -44,6 +44,7 @@ public class BasicLoggerTest {
 
     public String readFile(String file) throws IOException {
         StringBuilder stringBuilder = new StringBuilder();
+        StringBuilder stringBuilder2 = new StringBuilder();
         FileInputStream fileInputStream = new FileInputStream(file);
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(fileInputStream));
         String line = bufferedReader.readLine();
