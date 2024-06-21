@@ -417,6 +417,10 @@ public class BrokerController {
     public BlockingQueue<Runnable> getQueryThreadPoolQueue() {
         return queryThreadPoolQueue;
     }
+    
+    public BrokerMetricsManager getBrokerMetricsManager() {
+        return brokerMetricsManager;
+    }
 
     protected void initializeRemotingServer() throws CloneNotSupportedException {
         this.remotingServer = new NettyRemotingServer(this.nettyServerConfig, this.clientHousekeepingService);
